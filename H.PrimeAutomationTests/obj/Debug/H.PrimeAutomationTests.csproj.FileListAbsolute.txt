@@ -1,0 +1,12 @@
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\bin\Debug\H.PrimeAutomationTests.exe.config
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\bin\Debug\H.PrimeAutomationTests.exe
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\bin\Debug\H.PrimeAutomationTests.pdb
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\bin\Debug\nunit.framework.dll
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\bin\Debug\WebDriver.dll
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\bin\Debug\WebDriver.Support.dll
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\bin\Debug\nunit.framework.xml
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\bin\Debug\WebDriver.xml
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\bin\Debug\WebDriver.Support.xml
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\obj\Debug\H.PrimeAutomationTests.exe
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\obj\Debug\H.PrimeAutomationTests.pdb
+D:\VS_Workspace\H.PrimeAutomationTests\H.PrimeAutomationTests\obj\Debug\H.PrimeAutomationTests.csprojResolveAssemblyReference.cache
