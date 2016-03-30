@@ -29,5 +29,11 @@ namespace H.PrimeAutomationTests
 
         [FindsBy(How= How.Name, Using="ctl00$cphMain$btnSaveDiscipline")]
         public IWebElement btn_AddButton { get; set; }
+
+        public void FillDiscipline(string disciplineName) {
+            btn_AddNewDecipline.Click();
+            txt_DisciplineName.SendKeys(disciplineName);
+            btn_AddButton.Click();
+        }
     }
 }

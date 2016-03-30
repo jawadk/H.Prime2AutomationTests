@@ -24,7 +24,7 @@ namespace H.PrimeAutomationTests
         {
             PropertyCollection.driver = new FirefoxDriver();
             //PropertyCollection.driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password=&Login=Login");
-            PropertyCollection.driver.Navigate().GoToUrl("https://dev10.jamweb.com.au/Discipline/ManageDiscipline.aspx");
+            PropertyCollection.driver.Navigate().GoToUrl("https://dev10.jamweb.com.au");
             PropertyCollection.driver.Manage().Window.Maximize();
             Console.WriteLine("Open URL and browser miximize window");
         }
@@ -32,14 +32,24 @@ namespace H.PrimeAutomationTests
         [Test]
         public void CreateDecipline()
         {
-
+            LoginObjectModel pageLogin = new LoginObjectModel();
+            DisciplineObjectModel pageDiscipline = pageLogin.Login("tim.alan", "JAMWeb123");
+            pageDiscipline.FillDiscipline("Test Discipline");
             
-            LoginObjectModel login = new LoginObjectModel();
-            login.txt_UserName.SendKeys("tim.alan");
-            login.txt_Password.SendKeys("JAMWeb123");
-            login.btn_login.Click();
+            //LoginObjectModel login = new LoginObjectModel();
+            //login.txt_UserName.SendKeys("tim.alan");
+            //login.txt_Password.SendKeys("JAMWeb123");
+            //login.btn_login.Click();
+            //PropertyCollection.driver.Navigate().GoToUrl("https://dev10.jamweb.com.au/Discipline/ManageDiscipline.aspx");
 
-            WebDriverWait wait = new WebDriverWait(PropertyCollection.driver, TimeSpan.FromTicks(30000));
+            //DisciplineObjectModel descipline = new DisciplineObjectModel();
+            //descipline.btn_AddNewDecipline.Click();
+            //descipline.txt_DisciplineName.SendKeys("Test Discipline");
+            //descipline.ddb_AddButton.s
+            
+            
+
+            //WebDriverWait wait = new WebDriverWait(PropertyCollection.driver, TimeSpan.FromTicks(30000));
             //wait.Until(ExpectedConditions.ElementExists();
             //IWebElement element = new IWebElement();
 
