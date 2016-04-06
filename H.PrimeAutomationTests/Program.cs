@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
-using SeleniumConsoleApp;
+using H.PrimeAutomationTests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +24,7 @@ namespace H.PrimeAutomationTests
         {
             PropertyCollection.driver = new FirefoxDriver();
             //PropertyCollection.driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password=&Login=Login");
-            PropertyCollection.driver.Navigate().GoToUrl("https://dev10.jamweb.com.au");
+            PropertyCollection.driver.Navigate().GoToUrl("http://localhost:51943");
             PropertyCollection.driver.Manage().Window.Maximize();
             Console.WriteLine("Open URL and browser miximize window");
         }
@@ -33,8 +33,14 @@ namespace H.PrimeAutomationTests
         public void CreateDecipline()
         {
             LoginObjectModel pageLogin = new LoginObjectModel();
-            DisciplineObjectModel pageDiscipline = pageLogin.Login("tim.alan", "JAMWeb123");
-            pageDiscipline.FillDiscipline("Test Discipline");
+            pageLogin.Login("tim.alan", "JAMWeb123");
+            //PropertyCollection.driver.Navigate().GoToUrl("https://dev10.jamweb.com.au/Discipline/ManageDiscipline.aspx");
+            PropertyCollection.driver.Navigate().GoToUrl("http://localhost:51943/Discipline/ManageDiscipline.aspx");
+            DisciplineObjectModel discipline = new DisciplineObjectModel();
+            discipline.FillDiscipline("Test Adeel");
+            Console.WriteLine("Discipline created successfully");
+
+            //pageDiscipline.FillDiscipline("Test Discipline");
             
             //LoginObjectModel login = new LoginObjectModel();
             //login.txt_UserName.SendKeys("tim.alan");

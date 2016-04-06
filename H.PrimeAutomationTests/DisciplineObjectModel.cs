@@ -33,7 +33,10 @@ namespace H.PrimeAutomationTests
         public void FillDiscipline(string disciplineName) {
             btn_AddNewDecipline.Click();
             txt_DisciplineName.SendKeys(disciplineName);
+            SeleniumSetMethods.SelectDropdown("cphMain_ucAddDiscipline_ddlDiscColor", "Gold", PropertyType.Id);
             btn_AddButton.Click();
         }
+
+
     }
 }

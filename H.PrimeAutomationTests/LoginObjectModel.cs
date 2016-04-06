@@ -27,12 +27,19 @@ namespace H.PrimeAutomationTests
         [FindsBy(How=How.Id, Using="btn_Login")]
         public IWebElement btn_login{ get; set; }
 
-        public DisciplineObjectModel Login(string username, string password) 
+        //public DisciplineObjectModel Login(string username, string password) 
+        //{
+        //    txt_UserName.SendKeys(username);
+        //    txt_Password.SendKeys(password);
+        //    btn_login.Click();
+        //    return new DisciplineObjectModel();
+        //}
+
+        public void Login(string username, string password) 
         {
             txt_UserName.SendKeys(username);
             txt_Password.SendKeys(password);
             btn_login.Click();
-            return new DisciplineObjectModel();
         }
     }
 }
